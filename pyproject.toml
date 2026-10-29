@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "preprint-tracker"
+version = "0.1.0"
+description = "Track preprint versions, changes and publication status with a changelog."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+preprint-tracker = "preprint_tracker.cli:main"
+
+[tool.setuptools]
+packages = ["preprint_tracker"]
